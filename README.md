@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-utils
+npm install --save react-utils-llicheri
 ```
 
 ## Usage
