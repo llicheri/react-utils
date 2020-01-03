@@ -15,32 +15,17 @@ npm install --save react-utils-llicheri
 ```jsx
 import React, { Component } from "react";
 
-import { Aux, Firebase, FirebaseContext } from "react-utils";
-
 class Example extends Component {
   render() {
-    return <Aux>...Everithing</Aux>;
+    return (
+      <Aux>
+        ...Everithing
+        <GenricInput />
+        <Spinner />
+      </Aux>
+    );
   }
 }
-
-export default withFirebase(Example);
-
-// into the index.js
-config = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: ""
-};
-app = (
-  <FirebaseContext.Provider value={new Firebase(config)}>
-    <App />
-  </FirebaseContext.Provider>
-);
 
 //
 ```
