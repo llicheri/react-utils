@@ -13,19 +13,17 @@ npm install --save react-utils
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import MyComponent from 'react-utils'
+import MyComponent from "react-utils";
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
 
 ## License
 
-MIT © [Lorenzo Licheri](https://github.com/Lorenzo Licheri)
+MIT © [Lorenzo Licheri](https://github.com/llicheri)
