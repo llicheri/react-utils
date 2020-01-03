@@ -57,5 +57,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "firebase": "^7.6.1",
+    "react-datepicker": "^2.10.1"
+  }
 }

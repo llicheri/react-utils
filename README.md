@@ -15,13 +15,34 @@ npm install --save react-utils
 ```jsx
 import React, { Component } from "react";
 
-import MyComponent from "react-utils";
+import { Aux, Firebase, FirebaseContext } from "react-utils";
 
 class Example extends Component {
   render() {
-    return <MyComponent />;
+    return <Aux>...Everithing</Aux>;
   }
 }
+
+export default withFirebase(Example);
+
+// into the index.js
+config = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+};
+app = (
+  <FirebaseContext.Provider value={new Firebase(config)}>
+    <App />
+  </FirebaseContext.Provider>
+);
+
+//
 ```
 
 ## License

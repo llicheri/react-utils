@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import Aux from "./hoc/Auxiliary";
+import Firebase, { FirebaseContext } from "./Firebase/index";
+import { contentTypeToExtension } from "./utils/files";
+import GenericInput from "./components/GenericInput/GenericInput";
+import Spinner from "./components/Spinner/Spinner";
 
-import styles from "./styles.css";
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  };
-
-  render() {
-    const { text } = this.props;
-
-    return <div className={styles.test}>Example Components: {text}</div>;
-  }
-}
+export {
+  Aux,
+  Firebase,
+  FirebaseContext,
+  withFirebase,
+  contentTypeToExtension,
+  GenericInput,
+  Spinner
+};

@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-import ExampleComponent from "react-utils";
+import { Spinner, Aux, GenericInput } from "react-utils";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <ExampleComponent text="Modern React component module" />
-      </div>
+      <Aux>
+        <Spinner />
+        <GenericInput type="text" />
+      </Aux>
     );
   }
 }
