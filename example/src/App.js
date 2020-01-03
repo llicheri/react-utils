@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'react-utils'
+import ExampleComponent from "react-utils";
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ExampleComponent text="Modern React component module" />
       </div>
-    )
+    );
   }
 }
