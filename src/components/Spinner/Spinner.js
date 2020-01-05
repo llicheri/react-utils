@@ -1,10 +1,10 @@
 import React from "react";
-import "./Spinner.css";
+import css from "./Spinner.css";
 
 export default function Spinner() {
   return (
-    <div className="loading">
-      <div className="lds-ellipsis">
+    <div className={css.loading}>
+      <div className={css.ldsEllipsis}>
         <div></div>
         <div></div>
         <div></div>
